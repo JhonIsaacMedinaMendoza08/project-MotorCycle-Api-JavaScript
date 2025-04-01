@@ -4,4 +4,39 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box; 
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.header__index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    flex-wrap: wrap
+    
+}
+.headerNav__index {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 150px;
+}
+.header__logo {
+}
+.header__logo h1{
+}
+.header__links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.header__links a{
+}
+.header__search {
+}
+.header__search input{
 }
