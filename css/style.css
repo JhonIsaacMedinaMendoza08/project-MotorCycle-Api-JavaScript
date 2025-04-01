@@ -1,42 +1,108 @@
 @import url(variables.css);
 
-*{
+* {
     margin: 0;
-    padding: 0px;
-    box-sizing: border-box; 
-    max-width: 1440px;
+    padding: 0;
+    box-sizing: border-box;
+
     margin: auto;
     padding: 10px;
-    
+}
+body{
+    background: rgb(0,157,255);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.965), #009dff 100%);
+    height: 120vh;
 }
 
 .header__index {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
-    flex-wrap: wrap
-    
+    flex-wrap: wrap;
+    color: var(--color-3)
+
 }
+
 .headerNav__index {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    gap: 150px;
+    gap: 100px;
 }
 .header__logo {
+    display: flex;
+    flex-direction: row;
+}
+.header__logo img{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
 }
 .header__logo h1{
+    font-size: 30px;
+    font-family: "Montserrat-Bold";
 }
 .header__links {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    font-size: 20px;
+    font-family: "Montserrat-SemiBold";
+    text-align: center;
 }
 .header__links a{
+    text-decoration: none;
+    color: var(--color-3)
+    
 }
 .header__search {
+
 }
 .header__search input{
+    width: 300px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Montserrat-Medium";
+}
+.header__search button{
+
+}
+main{
+}
+/* 🔹 Media Query para pantallas menores a 768px */
+@media (max-width: 768px) {
+    * {
+        padding: 5px;
+    }
+    .header__index {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .headerNav__index {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .header__links {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .header__search {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__search input {
+        width: 90%;
+    }
 }
