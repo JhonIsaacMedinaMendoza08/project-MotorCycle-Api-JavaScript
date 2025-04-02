@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(/css/variables.css);
 
 * {
   margin: 0;
@@ -10,8 +10,8 @@ body {
   background: rgb(0, 157, 255);
   background: linear-gradient(
     100deg,
-    rgba(0, 0, 0, 0.965),
-    rgb(255, 0, 0) 100%
+    rgb(0, 0, 0) 30%,
+    #008aC9 100%
   );
   height: 100vh;
 }
@@ -30,8 +30,8 @@ body {
   top: 0;
   left: 0;
   width: 50vw;
-  height: 120vh;
-  background: rgba(0, 0, 0, 0.5); /* Filtro oscuro con 50% de opacidad */
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.665); /* Filtro oscuro con 50% de opacidad */
   z-index: -1; /* Capa oscura encima de la imagen */
 }
 .header__index {
@@ -90,28 +90,28 @@ body {
 }
 .header__search button {
 }
-/*AREA DEL MAIN, PRIMERA SECCION DEL DISENO*/
 
+
+/*AREA DEL MAIN, PRIMERA SECCION DEL DISENO*/
 main {
 }
-.section_infoDucatiV4S {
-  margin-top: -80px;
+.section_infoBmwS1000rr {
 }
-.infoDucatiV4S {
+.infoBmwS1000rr {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
-.ducatiImage {
+.BmwS1000rrImage {
   width: 100%;
 }
-.ducatiText {
+.BmwS1000rrText {
   width: 60%;
   position: absolute;
   top: 300px;
   display: flex;
 }
-.infoDucatiV4S__texts {
+.infoBmwS1000rr__texts {
   max-width: 500px;
   width: 100%;
   display: flex;
@@ -121,101 +121,19 @@ main {
   text-align: center;
   margin-top: -40px;
 }
-.infoDucatiV4S__texts h3 {
+.infoBmwS1000rr__texts h3 {
   font-size: 34px;
   font-family: "Montserrat-SemiBold";
 }
-.infoDucatiV4S__texts p {
+.infoBmwS1000rr__texts p {
   font-size: 20px;
   font-family: "Montserrat-Regular";
 }
 /*SECCION DE MARCAS DE MOTOCICLETAS */
-.section_motorcyclebrands {
-  margin-top: 80px;
+.section_motorcycleType {
+  margin-top: 40px;
   background: white;
   width: 100%;
   padding: 50px;
 }
-.div__motorcyclebrands-width {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-}
-.div__motorcyclebrands--text{
-}
-.div__motorcyclebrands--text h2{
-  font-size: 70px;
-  font-family: "Montserrat-SemiBold";
-  color: #000;
-  text-align: center;
-}
 
-
-
-.div__motorcycleBrands {
-  display: flex;
-  gap: 80px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 100px;
-}
-.div__motorcycleBrands a {
-}
-
-.div__motorcycleBrands a img {
-  width: 230px;
-  height: 230px;
-}
-
-/* 🔹 Media Query para pantallas menores a 768px */
-@media (max-width: 768px) {
-
-  .header__index {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .headerNav__index {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .header__links {
-    flex-direction: row;
-    gap: 5px;
-  }
-
-  .header__search {
-    width: 100%;
-    text-align: center;
-  }
-
-  .header__search input {
-    width: 90%;
-  }
-}
-
-/* .div__typesOfMotorcycles--width{
-    max-width: 1440px;
-    margin: 0 auto;
-    background: yellow;
-}
-.div__typesOfMotorcycles--text{
-
-}
-.div__typesOfMotorcycles--text h2{
-
-}
-.div__typesOfMotorcycles--images{
-
-}
-.div__typesOfMotorcycles--images a{
-    background: palegreen;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    
-} */
