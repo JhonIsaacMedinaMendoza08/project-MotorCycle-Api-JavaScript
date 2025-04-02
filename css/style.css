@@ -49,7 +49,6 @@ body {
   flex-direction: row;
   gap: 80px;
   z-index: 1;
-
 }
 .header__logo {
   display: flex;
@@ -131,7 +130,7 @@ main {
 }
 /*SECCION DE MARCAS DE MOTOCICLETAS */
 .section_motorcyclebrands {
-  margin-top: 80px;
+  margin-top: 70px;
   background: white;
   width: 100%;
   padding: 50px;
@@ -141,16 +140,14 @@ main {
   width: 100%;
   margin: 0 auto;
 }
-.div__motorcyclebrands--text{
+.div__motorcyclebrands--text {
 }
-.div__motorcyclebrands--text h2{
+.div__motorcyclebrands--text h2 {
   font-size: 70px;
   font-family: "Montserrat-SemiBold";
   color: #000;
   text-align: center;
 }
-
-
 
 .div__motorcycleBrands {
   display: flex;
@@ -168,9 +165,108 @@ main {
   height: 230px;
 }
 
+/*SECCION DEL FORMULARIO PARA RECOGER INFORMACION SOBRE EL USUARIO*/
+.section__contactUs {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.section__contactUs img {
+  max-width: 200px;
+  width: 100%;
+}
+.div__contactUs {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.div__contactUs h2 {
+  font-size: 60px;
+  font-family: "Montserrat-SemiBold";
+  color: #000;
+}
+.div__contactUs p {
+  font-size: 25px;
+  font-family: "Montserrat-Regular";
+}
+.div__contactUs__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  width: 100%;
+}
+
+.div__contactUs__form input,
+.div__contactUs__form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.div__contactUs__form input:hover,
+.div__contactUs__form textarea:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.div__contactUs__form button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+}
+.div__contactUs__form button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 10px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+/*FOOTER CON REFERENCIAS A MIS PERFILES EN LAS REDES SOCIALES*/
+footer {
+  background-color: #4a4a4a;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+
+}
+.div__footer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+}
+.div__footer a,
+.div__footer p {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat-SemiBold";
+font-size: 18px;
+
+}
+.div__footer a img{
+  width: 50px;
+  height: 50px;
+
+}
+
+
+
+
 /* 🔹 Media Query para pantallas menores a 768px */
 @media (max-width: 768px) {
-
   .header__index {
     flex-direction: column;
     align-items: center;
@@ -198,24 +294,3 @@ main {
   }
 }
 
-/* .div__typesOfMotorcycles--width{
-    max-width: 1440px;
-    margin: 0 auto;
-    background: yellow;
-}
-.div__typesOfMotorcycles--text{
-
-}
-.div__typesOfMotorcycles--text h2{
-
-}
-.div__typesOfMotorcycles--images{
-
-}
-.div__typesOfMotorcycles--images a{
-    background: palegreen;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    
-} */
