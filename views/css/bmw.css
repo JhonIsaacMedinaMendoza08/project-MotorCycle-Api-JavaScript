@@ -81,7 +81,7 @@ body {
 }
 
 .header__links a:hover {
-  color: #ff6600;
+  color: #000dff;
 }
 
 .header__search {
@@ -247,7 +247,43 @@ footer {
 }
 
 /* ==================== MEDIA QUERIES ==================== */
-
+@media (max-width: 1440px) {
+  .headerNav__index {
+    gap: 30px;
+    padding: 15px;
+  }
+  .motorcycleText {
+    width: 50%;
+    top: 250px;
+  }
+  .div__motorcycleBrands {
+    gap: 40px;
+    padding-top: 60px;
+  }
+  .div__motorcycleBrands a img {
+    width: 180px;
+    height: 180px;
+  }
+  .motorcycleImage{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoAboutMotorcycle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .motorcycleText{
+    width: 70%;
+  }
+  .infoAboutMotorcycle__texts{
+    margin-right: 80px;
+    scale: 0.9;
+    padding: 10px;
+  }
+}
 /*Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
   .headerNav__index {
@@ -265,6 +301,25 @@ footer {
   .div__motorcycleBrands a img {
     width: 180px;
     height: 180px;
+  }
+  .motorcycleImage{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoAboutMotorcycle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .motorcycleText{
+    width: 90%;
+  }
+  .infoAboutMotorcycle__texts{
+    margin-right: -50px;
+    scale: 0.8;
+    padding: 10px;
   }
 }
 
@@ -305,10 +360,35 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .motorcycleImage{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoAboutMotorcycle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .motorcycleText{
+    width: 90%;
+    position: absolute;
+  }
+  .infoAboutMotorcycle__texts{
+    margin-right: 50px;
+    scale: 1;
+    padding: 10px;
+  }
 }
 
 /* Móviles pequeños (<576px) */
 @media (max-width: 576px) {
+  .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .header__logo h1 {
     font-size: 20px;
   }
@@ -332,9 +412,13 @@ footer {
   }
 
   .div__footer {
-    flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+  .infoAboutMotorcycle__texts{
+    margin-right: 50px;
+    scale: 0.9;
+    padding-top: 30px;
   }
 }
 
@@ -353,5 +437,10 @@ footer {
   .div__contactUs p {
     font-size: 18px;
     text-align: center;
+  }
+  .infoAboutMotorcycle__texts{
+    margin-right: 50px;
+    scale: 0.9;
+    padding-top: 30px;
   }
 }
