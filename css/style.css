@@ -19,10 +19,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw; /* 50% del ancho */
-  height: 100vh; /* Altura del 120% de la pantalla */
+  width: 50vw; 
+  height: 100vh; 
   object-fit: cover;
-  z-index: -1; /* Imagen debajo de la capa oscura */
+  z-index: -1; 
 }
 
 .background-image-overlay {
