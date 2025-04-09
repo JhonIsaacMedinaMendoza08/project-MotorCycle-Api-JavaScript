@@ -1,6 +1,12 @@
 const contenedor = document.getElementById("typesOfMotorcycles");
 const searchInput = document.getElementById("searchInput");
 
+// Leer el atributo data-make del <main>
+const mainElement = document.querySelector("main");
+const make = mainElement?.dataset.make; // por defecto "bmw"
+
+// Obtener y mostrar las motos según la marca
+getMotorcycles(`https://api.api-ninjas.com/v1/motorcycles?make=${make}`);
 // Aquí almacenamos todas las motos obtenidas de la API
 let allMotorcycles = [];
 
@@ -8,7 +14,7 @@ let allMotorcycles = [];
  * Función que renderiza las tarjetas de motos en el contenedor.
  * Recibe un array de motocicletas y crea tarjetas con su información.
  */
-function renderMotorcycles(motorcycles) {
+function showMotorcycles(motorcycles) {
     contenedor.innerHTML = ""; // Limpiar el contenido anterior del contenedor
 
     motorcycles.forEach((motorcycle) => {
@@ -24,6 +30,12 @@ function renderMotorcycles(motorcycles) {
             <p><strong>Power:</strong> ${motorcycle.power || "N/A"}</p>
             <p><strong>Displacement:</strong> ${motorcycle.displacement || "N/A"}</p>
             <p><strong>Torque:</strong> ${motorcycle.torque || "N/A"}</p>
+            <p><strong>Gearbox:</strong> ${motorcycle.gearbox || "N/A"}</p>
+            <p><strong>Clutch:</strong> ${motorcycle.clutch || "N/A"}</p>
+            <p><strong>Front tire:</strong> ${motorcycle.front_tire || "N/A"}</p>
+            <p><strong>Rear tire:</strong> ${motorcycle.rear_tire || "N/A"}</p>
+            <p><strong>Weight:</strong> ${motorcycle.total_weight || "N/A"}</p>
+
         `;
 
         // Agregar la tarjeta al contenedor principal
@@ -43,8 +55,7 @@ searchInput.addEventListener("input", () => {
         `${moto.make} ${moto.model}`.toLowerCase().includes(term)
     );
 
-    // Volvemos a renderizar solo las motos que coinciden con la búsqueda
-    renderMotorcycles(filtered);
+    showMotorcycles(filtered);
 });
 
 /**
@@ -63,11 +74,10 @@ async function getMotorcycles(url) {
         const data = await response.json(); // Convertimos la respuesta a JSON
 
         allMotorcycles = data; // Guardamos todas las motos para poder filtrarlas luego
-        renderMotorcycles(allMotorcycles); // Mostramos todas las motos al cargar
+        showMotorcycles(allMotorcycles); // Mostramos todas las motos al cargar
     } catch (error) {
         console.error("Error al obtener las motocicletas:", error);
     }
 }
 
 // Llamamos a la función para obtener y mostrar las motos de la marca BMW al cargar la página
-getMotorcycles("https://api.api-ninjas.com/v1/motorcycles?make=bmw");
