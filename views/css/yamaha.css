@@ -112,7 +112,7 @@ body {
 main {
 }
 .section_infoAboutMotorcycle {
-  margin-top: 0px;
+  margin-top: -80px;
 }
 .infoAboutMotorcycle {
   max-width: 1200px;
@@ -121,25 +121,23 @@ main {
 }
 .motorcycleImage {
   width: 100%;
-  margin-top: -20px;
+  scale: 0.8;
 }
 .motorcycleText {
   width: 60%;
   position: absolute;
   top: 300px;
   display: flex;
-  margin-top: -30px;
-
 }
 .infoAboutMotorcycle__texts {
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-right: 200px;
   color: white;
   text-align: center;
-  margin-top: -40px;
+  margin-top: -120px;
 }
 .infoAboutMotorcycle__texts h3 {
   font-size: 34px;
@@ -151,7 +149,7 @@ main {
 }
 /*SECCION DONDE SE MUESTRAN LAS MOTOCICLETAS GUARDADAS EN LA API*/
 .section_motorcycleType{
-  margin-top: 10px;
+  margin-top: 0px;
   background: white;
 }
 .section_motorcycleType h2 {
@@ -282,9 +280,9 @@ footer {
     width: 70%;
   }
   .infoAboutMotorcycle__texts{
-    margin-right: 80px;
+    margin-right: -60px;
     scale: 0.9;
-    padding: 10px;
+    padding: 20px;
   }
 }
 /*Tablets (768px - 1024px) */
@@ -310,6 +308,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
   .infoAboutMotorcycle{
     display: flex;
@@ -318,11 +317,12 @@ footer {
   }
   .motorcycleText{
     width: 90%;
+    margin-top: 40px;
+
   }
   .infoAboutMotorcycle__texts{
-    margin-right: -50px;
-    scale: 0.8;
-    padding: 10px;
+    text-align: center;    
+    padding: 40px;
   }
 }
 
@@ -381,7 +381,7 @@ footer {
   .infoAboutMotorcycle__texts{
     margin-right: 50px;
     scale: 1;
-    padding: 10px;
+    padding: 50px;
   }
 }
 
@@ -420,8 +420,10 @@ footer {
   }
   .infoAboutMotorcycle__texts{
     margin-right: 50px;
-    scale: 0.9;
-    padding-top: 30px;
+    padding-top: 100px;
+  }
+  .motorcycleImage{
+    margin-top: -40px;
   }
 }
 
@@ -444,6 +446,6 @@ footer {
   .infoAboutMotorcycle__texts{
     margin-right: 50px;
     scale: 0.9;
-    padding-top: 30px;
+    padding-top: 90px;
   }
 }

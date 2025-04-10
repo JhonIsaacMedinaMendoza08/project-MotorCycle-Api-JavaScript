@@ -11,7 +11,7 @@ body {
   background: linear-gradient(
     100deg,
     rgba(0, 0, 0, 0.965),
-    rgb(114, 116, 123) 100%
+    #72747b 100%
   );
   height: 100vh;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .header__links a:hover {
-  color: #000dff;
+  color: #72747b;
 }
 
 .header__search {
