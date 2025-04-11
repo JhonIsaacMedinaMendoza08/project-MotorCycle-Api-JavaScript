@@ -81,3 +81,7 @@ async function getMotorcycles(url) {
 }
 
 // Llamamos a la función para obtener y mostrar las motos de la marca BMW al cargar la página
+
+
+
+

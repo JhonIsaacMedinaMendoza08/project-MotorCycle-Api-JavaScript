@@ -26,6 +26,18 @@
           <a href="#brands">Motorcycle brands</a>
           <a href="#contact">Contact Us</a>
         </div>
+
+        <div class="header__buttonLike">
+          <button class="header__like" id="button__likeMotorcycles">👍🏻</button>
+          <dialog id="my__dialog">
+            <div class="dialog__header">
+              <span id="my__dialog_close">Close</span><br>
+            </div>
+            <div class="dialog__content">
+              <h3>This will be a future dialogue where the user's favorite motorcycles will be shown.</h3>
+            </div>
+          </dialog>
+        </div>
         <!-- <div class="header__search">
           <input type="text" placeholder="Search your next motorcycle..." />
         </div> -->
@@ -79,11 +91,12 @@
               from you.
             </p>
             <div class="div__contactUs__form">
-              <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="number" placeholder="Phone number" />
-                <textarea placeholder="Message"></textarea> <br />
+              <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Name" required/>
+                <input type="email" name="email" id="email" placeholder="Email" required/>
+                <input type="number" name="number" id="number" placeholder="Phone number" required/>
+                <input type="text" name="whatMotorcycle" id="whatMotorcycle" placeholder="What motorcycle do you want more information about?"/>
+                <textarea id="message" name="message" placeholder="Message"></textarea> <br />
                 <button>Send</button>
               </form>
             </div>
@@ -106,6 +119,7 @@
         <a href="https://github.com/JhonIsaacMedinaMendoza08" target="_blank"
           ><img src="./storage/img/git hub.png" alt=""
         /></a>
+        <a href="./views/contact.html">View messages sent by users</a>
       </div>
     </footer>
   </body>

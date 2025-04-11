@@ -19,10 +19,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw; 
-  height: 100vh; 
+  width: 50vw;
+  height: 100vh;
   object-fit: cover;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .background-image-overlay {
@@ -83,29 +83,16 @@ body {
 .header__links a:hover {
   color: #ff6600;
 }
-
-.header__search {
-  flex: 1;
-  max-width: 300px;
-  min-width: 150px;
+.header__buttonLike{
+  z-index: +1;
 }
-.header__search input {
-  width: 100%;
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-}
-.header__search {
-}
-.header__search input {
-  width: 240px;
-  font-size: 12px;
-  padding: 10px;
-  border-radius: 20px;
-  font-family: "Montserrat-Medium";
-}
-.header__search button {
+.header__like {
+  border-radius: 60px;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: +2;
 }
 /*AREA DEL MAIN, PRIMERA SECCION DEL DISENO*/
 
