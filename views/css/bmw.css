@@ -444,3 +444,110 @@ footer {
     padding-top: 30px;
   }
 }
+@media (max-width: 325px) {
+  .header__logo h1 {
+    font-size: 18px;
+  }
+
+  .header__links a {
+    font-size: 14px;
+  }
+
+  .div__motorcyclebrands--text h2,
+  .div__contactUs h2 {
+    font-size: 30px;
+  }
+
+  .div__contactUs p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .div__motorcycleBrands a img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .infoAboutMotorcycle__texts {
+    scale: 0.7;
+    width: 140%;
+    margin-top: -70px;
+    margin-left: -60px;
+  }
+  .motorcycleImage{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+
+  .motorcycleText {
+    width: 90%;
+    position: absolute;
+    text-align: center;
+  }
+  .section_motorcycleType{
+    margin-top: -20px;
+  }
+  .div__footer a,
+  .div__footer p {
+    font-size: 13px;
+  }
+
+  .div__footer a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 165px) {
+  body {
+    background: rgba(0, 30, 255, 0.856);
+
+    height: 100vh;
+  }
+  .background-image{
+    display: none;
+  }
+  .motorcycleText{
+    margin-top: -70px;
+  }
+  .background-image-overlay{
+    display: none;
+  }
+  .header__logo h1 {
+    font-size: 12px;
+  }
+
+  .header__links a {
+    font-size: 10px;
+  }
+
+
+
+  .div__motorcycleBrands a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .infoAboutMotorcycle__texts {
+    font-size: 12px;
+    scale: 0.6;
+    padding: 0 5px;
+    margin-left: -40px;
+    margin-top: -40px;
+  }
+  .typesOfMotorcycles{
+    width: 90%;
+  }
+
+  .div__footer a,
+  .div__footer p {
+    font-size: 10px;
+  }
+
+  .div__footer a img {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
